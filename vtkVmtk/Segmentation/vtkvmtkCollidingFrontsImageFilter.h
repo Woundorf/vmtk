@@ -134,6 +134,8 @@ class VTK_VMTK_SEGMENTATION_EXPORT vtkvmtkCollidingFrontsImageFilter : public vt
         //          this->SetErrorCode( this->GetOutput(0)->GetSource()->GetErrorCode() );
         }
       }
+#else
+    this->vtkImporter->Update();
 #endif
   //ETX
   }
